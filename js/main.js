@@ -181,30 +181,32 @@
   }
 
   // Layout objects around the right/edges so text stays readable
+  // Camera at z=14 / fov 50 sees roughly x ±10.4, y ±6.5 at z=0 on a 16:10 screen.
+  // Keep the big pieces in the outer margins so the headline and card stay clean.
   var helix = makeHelix(7, 1.1, 2.2);
   helix.rotation.z = 0.35;
-  addFloater(helix, 6.5, 0.5, -3, 0.6, new THREE.Vector3(0, 0.006, 0));
+  addFloater(helix, 10.8, 0.2, -3, 0.6, new THREE.Vector3(0, 0.006, 0));
 
   var book1 = makeBook(1.3, 0x7455d6);
   book1.rotation.set(0.3, -0.5, 0.2);
-  addFloater(book1, -6.8, 2.6, -2, 1.1, new THREE.Vector3(0.003, 0.005, 0.002));
+  addFloater(book1, -9.8, 3.4, -3, 1.1, new THREE.Vector3(0.003, 0.005, 0.002));
 
   var book2 = makeBook(0.95, 0x9b82ea);
   book2.rotation.set(-0.2, 0.6, -0.3);
-  addFloater(book2, -5.5, -3.2, 0, 0.9, new THREE.Vector3(0.004, -0.004, 0.002));
+  addFloater(book2, -9, -4.2, -1, 0.9, new THREE.Vector3(0.004, -0.004, 0.002));
 
   var cap = makeCap(1.1);
   cap.rotation.set(0.2, 0.4, -0.1);
-  addFloater(cap, 3.8, 3.6, -1, 0.8, new THREE.Vector3(0.002, 0.006, 0.001));
+  addFloater(cap, 1.6, 5.6, -2, 0.8, new THREE.Vector3(0.002, 0.006, 0.001));
 
   // Low-poly shapes for depth
   var shapes = [
-    { geo: new THREE.IcosahedronGeometry(0.7, 0), pos: [-2.5, 4.2, -5] },
-    { geo: new THREE.OctahedronGeometry(0.6, 0), pos: [8, -3.4, -4] },
-    { geo: new THREE.TorusGeometry(0.6, 0.2, 12, 40), pos: [1.5, -4.2, -3] },
-    { geo: new THREE.DodecahedronGeometry(0.5, 0), pos: [-8.5, -0.5, -6] },
-    { geo: new THREE.TorusKnotGeometry(0.42, 0.13, 80, 12), pos: [7.5, 4.3, -6] },
-    { geo: new THREE.IcosahedronGeometry(0.4, 0), pos: [-1, -0.5, -9] }
+    { geo: new THREE.IcosahedronGeometry(0.7, 0), pos: [-3.5, 6.2, -6] },
+    { geo: new THREE.OctahedronGeometry(0.6, 0), pos: [9.5, -4.4, -4] },
+    { geo: new THREE.TorusGeometry(0.6, 0.2, 12, 40), pos: [0.6, -5.8, -3] },
+    { geo: new THREE.DodecahedronGeometry(0.5, 0), pos: [-11, -0.5, -6] },
+    { geo: new THREE.TorusKnotGeometry(0.42, 0.13, 80, 12), pos: [9.5, 5.5, -6] },
+    { geo: new THREE.IcosahedronGeometry(0.4, 0), pos: [-1, -1.5, -10] }
   ];
   shapes.forEach(function (s, i) {
     var m = new THREE.Mesh(s.geo, mat(palette[i % palette.length], { flatShading: true, opacity: 0.8 }));
@@ -237,15 +239,18 @@
 
     // Push objects out on narrow screens so they sit around the content
     var narrow = w < 960;
-    helix.position.x = narrow ? 3.4 : 6.5;
-    helix.position.y = narrow ? -5.2 : 0.5;
-    helix.scale.setScalar(narrow ? 0.7 : 1);
-    cap.position.x = narrow ? -3.4 : 3.8;
-    cap.position.y = narrow ? 5.4 : 3.6;
-    book1.position.x = narrow ? -3.6 : -6.8;
-    book1.position.y = narrow ? -6 : 2.6;
-    book2.position.x = narrow ? 3.6 : -5.5;
-    book2.position.y = narrow ? 5.6 : -3.2;
+    helix.position.x = narrow ? 4.2 : 10.8;
+    helix.position.y = narrow ? -7.5 : 0.2;
+    helix.scale.setScalar(narrow ? 0.6 : 1);
+    cap.position.x = narrow ? -3.8 : 1.6;
+    cap.position.y = narrow ? 7 : 5.6;
+    cap.scale.setScalar(narrow ? 0.8 : 1);
+    book1.position.x = narrow ? -4.4 : -9.8;
+    book1.position.y = narrow ? -8 : 3.4;
+    book1.scale.setScalar(narrow ? 0.75 : 1);
+    book2.position.x = narrow ? 4.4 : -9;
+    book2.position.y = narrow ? 7.4 : -4.2;
+    book2.scale.setScalar(narrow ? 0.8 : 1);
     floaters.forEach(function (f) { f.baseX = f.mesh.position.x; f.baseY = f.mesh.position.y; });
   }
   window.addEventListener('resize', resize);

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Khadija Jamal K. — experienced female home tutor for Class 1 to 10. All subjects with special focus on Biology & Science. Concept-based learning, exam preparation, result oriented.">
+  <meta name="theme-color" content="#5b3fb8">
+  <title>Khadija Jamal K. | Home Tutor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%235b3fb8'/%3E%3Cpath d='M32 16 8 27l24 11 24-11z' fill='%23fff'/%3E%3Cpath d='M18 33v10c0 4 7 7 14 7s14-3 14-7V33l-14 6z' fill='%23d9ccff'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__brand" aria-label="Home">
+        <span class="nav__logo">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
+        </span>
+        <span class="nav__name">Khadija Jamal K.</span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#classes">Classes</a>
+        <a href="#subjects">Subjects</a>
+        <a href="#why">Why Me</a>
+        <a href="#contact" class="btn btn--sm">Book a Class</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <canvas id="hero3d" class="hero__canvas" aria-hidden="true"></canvas>
+    <div class="hero__glow hero__glow--1"></div>
+    <div class="hero__glow hero__glow--2"></div>
+
+    <div class="container hero__inner">
+      <div class="hero__content reveal">
+        <span class="pill pill--glow">
+          <span class="pill__dot"></span> Home Tutor Available
+        </span>
+        <h1 class="hero__title">
+          Learning that <span class="grad-text">clicks</span>,<br>
+          right at your home.
+        </h1>
+        <p class="hero__sub">
+          Personalised home tutoring for <strong>Class 1 to 10</strong> — all subjects, with a
+          special focus on <strong>Biology &amp; Science</strong>. Concept-based, exam-ready, result oriented.
+        </p>
+        <div class="hero__cta">
+          <a href="#contact" class="btn btn--primary">
+            Book a Free Demo Class
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="https://wa.me/923363105232?text=Hi%20Khadija%2C%20I%20am%20interested%20in%20home%20tuition." class="btn btn--ghost" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c.6.3 1.1.4 1.5.6.6.2 1.2.2 1.7.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>
+            WhatsApp Me
+          </a>
+        </div>
+        <ul class="hero__stats">
+          <li><strong>1+</strong><span>Year Experience</span></li>
+          <li><strong>1–10</strong><span>Classes Covered</span></li>
+          <li><strong>All</strong><span>Subjects</span></li>
+        </ul>
+      </div>
+
+      <div class="hero__card-wrap reveal reveal--delay">
+        <div class="tilt-card hero__card" data-tilt>
+          <div class="hero__card-inner">
+            <div class="hero__avatar">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/><path d="M22 10v6"/></svg>
+            </div>
+            <h3>Khadija Jamal K.</h3>
+            <p class="hero__card-degree">BS Biotechnology · Final Year (8th Semester)</p>
+            <div class="hero__card-badge">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2l2.4 5.6L20 8l-4.5 3.9L17 18l-5-3-5 3 1.5-6.1L4 8l5.6-.4z"/></svg>
+              Experienced Female Tutor
+            </div>
+            <ul class="hero__card-list">
+              <li>✓ Professional</li>
+              <li>✓ Reliable</li>
+              <li>✓ Patient</li>
+            </ul>
+          </div>
+          <span class="tilt-card__shine"></span>
+        </div>
+        <div class="float-chip float-chip--a">🧬 Biology Focus</div>
+        <div class="float-chip float-chip--b">📚 Class 1 – 10</div>
+        <div class="float-chip float-chip--c">🎯 Result Oriented</div>
+      </div>
+    </div>
+
+    <a href="#about" class="hero__scroll" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Available for Home Tutoring</span><i>✦</i>
+      <span>Professional</span><i>✦</i>
+      <span>Reliable</span><i>✦</i>
+      <span>Patient</span><i>✦</i>
+      <span>Concept-Based Learning</span><i>✦</i>
+      <span>Exam Preparation</span><i>✦</i>
+      <span>Result Oriented</span><i>✦</i>
+      <span>Available for Home Tutoring</span><i>✦</i>
+      <span>Professional</span><i>✦</i>
+      <span>Reliable</span><i>✦</i>
+      <span>Patient</span><i>✦</i>
+      <span>Concept-Based Learning</span><i>✦</i>
+      <span>Exam Preparation</span><i>✦</i>
+      <span>Result Oriented</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="container about__grid">
+      <div class="about__visual reveal">
+        <div class="cube-scene" aria-hidden="true">
+          <div class="cube">
+            <div class="cube__face cube__face--front">🧬</div>
+            <div class="cube__face cube__face--back">📖</div>
+            <div class="cube__face cube__face--right">🔬</div>
+            <div class="cube__face cube__face--left">✏️</div>
+            <div class="cube__face cube__face--top">🎓</div>
+            <div class="cube__face cube__face--bottom">⭐</div>
+          </div>
+        </div>
+        <div class="about__ring about__ring--1"></div>
+        <div class="about__ring about__ring--2"></div>
+      </div>
+      <div class="about__content reveal reveal--delay">
+        <span class="eyebrow">About the Tutor</span>
+        <h2 class="section__title">Meet <span class="grad-text">Khadija Jamal K.</span></h2>
+        <p>
+          A final-year <strong>BS Biotechnology</strong> student (8th Semester) with over a year of hands-on
+          home tutoring experience. Khadija believes every student learns differently — so every lesson is
+          shaped around the child, not the textbook.
+        </p>
+        <p>
+          From building strong foundations in primary classes to guiding board-exam preparation for
+          Classes 6 to 10, her approach is calm, structured and always focused on real understanding.
+        </p>
+        <div class="about__tags">
+          <span class="tag">BS Biotechnology</span>
+          <span class="tag">8th Semester</span>
+          <span class="tag">1+ Year Experience</span>
+          <span class="tag">Female Tutor</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CLASSES ===== -->
+  <section class="section classes" id="classes">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">Classes Offered</span>
+        <h2 class="section__title">Pick the slot that <span class="grad-text">fits your child</span></h2>
+        <p class="section__sub">Two dedicated evening batches, so every age group gets full attention.</p>
+      </div>
+
+      <div class="classes__grid">
+        <article class="tilt-card class-card reveal" data-tilt>
+          <div class="class-card__icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </div>
+          <span class="class-card__label">Primary</span>
+          <h3>Class 1 to 5</h3>
+          <div class="class-card__time">
+            <span class="class-card__time-label">Timing</span>
+            <strong>4:00 PM – 6:00 PM</strong>
+          </div>
+          <ul class="class-card__list">
+            <li>Strong reading, writing &amp; numeracy foundations</li>
+            <li>Fun, activity-based science concepts</li>
+            <li>Homework help &amp; daily revision</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline btn--block">Enquire for Primary</a>
+          <span class="tilt-card__shine"></span>
+        </article>
+
+        <article class="tilt-card class-card class-card--accent reveal reveal--delay" data-tilt>
+          <div class="class-card__icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </div>
+          <span class="class-card__label">Secondary</span>
+          <h3>Class 6 to 10</h3>
+          <div class="class-card__time">
+            <span class="class-card__time-label">Timing</span>
+            <strong>6:00 PM – 8:00 PM</strong>
+          </div>
+          <ul class="class-card__list">
+            <li>In-depth Biology &amp; Science coaching</li>
+            <li>Board exam strategy &amp; past papers</li>
+            <li>Weekly tests with progress feedback</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary btn--block">Enquire for Secondary</a>
+          <span class="tilt-card__shine"></span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SUBJECTS ===== -->
+  <section class="section subjects" id="subjects">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">Subjects &amp; Approach</span>
+        <h2 class="section__title">All Subjects · Special Focus on <span class="grad-text">Biology &amp; Science</span></h2>
+        <p class="section__sub">One tutor for everything — with expert-level depth where it matters most.</p>
+      </div>
+
+      <div class="subjects__orbit reveal" aria-hidden="true">
+        <div class="orbit orbit--1"><span class="orbit__item">🧬</span></div>
+        <div class="orbit orbit--2"><span class="orbit__item">🔬</span><span class="orbit__item orbit__item--2">📐</span></div>
+        <div class="orbit orbit--3"><span class="orbit__item">📖</span><span class="orbit__item orbit__item--2">🌍</span><span class="orbit__item orbit__item--3">✏️</span></div>
+        <div class="orbit__core">
+          <span>All<br>Subjects</span>
+        </div>
+      </div>
+
+      <div class="approach__grid">
+        <div class="approach reveal">
+          <div class="approach__icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V17h6v-.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg>
+          </div>
+          <h3>Concept-Based Learning</h3>
+          <p>No rote memorisation. Every topic is explained until the "why" is crystal clear, so students can apply it anywhere.</p>
+        </div>
+        <div class="approach reveal reveal--delay">
+          <div class="approach__icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
+          </div>
+          <h3>Exam Preparation</h3>
+          <p>Structured revision plans, past-paper practice and time-management techniques to walk into exams with confidence.</p>
+        </div>
+        <div class="approach reveal reveal--delay2">
+          <div class="approach__icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 5.6L20 8l-4.5 3.9L17 18l-5-3-5 3 1.5-6.1L4 8l5.6-.4z"/></svg>
+          </div>
+          <h3>Result Oriented</h3>
+          <p>Clear goals for every term, regular progress updates for parents, and a track record of improved grades.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY ===== -->
+  <section class="section why" id="why">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">Why Parents Choose Khadija</span>
+        <h2 class="section__title">Tutoring you can <span class="grad-text">trust</span></h2>
+      </div>
+      <div class="why__grid">
+        <div class="why__item reveal">
+          <span class="why__num">01</span>
+          <h3>Professional</h3>
+          <p>Punctual, well-prepared lessons with a clear plan for every session.</p>
+        </div>
+        <div class="why__item reveal reveal--delay">
+          <span class="why__num">02</span>
+          <h3>Reliable</h3>
+          <p>Consistent schedule you can count on — no last-minute cancellations.</p>
+        </div>
+        <div class="why__item reveal reveal--delay2">
+          <span class="why__num">03</span>
+          <h3>Patient</h3>
+          <p>A calm, encouraging teaching style that builds confidence in shy learners.</p>
+        </div>
+        <div class="why__item reveal reveal--delay3">
+          <span class="why__num">04</span>
+          <h3>Home Comfort</h3>
+          <p>Learning in a familiar environment means better focus and zero travel time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact__card tilt-card reveal" data-tilt data-tilt-max="4">
+        <div class="contact__bg" aria-hidden="true"></div>
+        <div class="contact__inner">
+          <div class="contact__text">
+            <span class="eyebrow eyebrow--light">Get in Touch</span>
+            <h2>Ready to give your child a head start?</h2>
+            <p>Message or call today to schedule a free demo class. Limited evening slots available.</p>
+          </div>
+          <div class="contact__links">
+            <a href="tel:03363105232" class="contact__link">
+              <span class="contact__icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+              </span>
+              <span>
+                <small>Phone</small>
+                <strong>0336 3105232</strong>
+              </span>
+            </a>
+            <a href="mailto:khadijajamalk@gmail.com" class="contact__link">
+              <span class="contact__icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              </span>
+              <span>
+                <small>Email</small>
+                <strong>khadijajamalk@gmail.com</strong>
+              </span>
+            </a>
+            <a href="https://wa.me/923363105232?text=Hi%20Khadija%2C%20I%20am%20interested%20in%20home%20tuition." target="_blank" rel="noopener" class="contact__link contact__link--wa">
+              <span class="contact__icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c.6.3 1.1.4 1.5.6.6.2 1.2.2 1.7.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>
+              </span>
+              <span>
+                <small>WhatsApp</small>
+                <strong>Chat Now</strong>
+              </span>
+            </a>
+          </div>
+        </div>
+        <span class="tilt-card__shine"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
+        </span>
+        <div>
+          <strong>Khadija Jamal K.</strong>
+          <span>Home Tutor · Class 1 to 10</span>
+        </div>
+      </div>
+      <p class="footer__tagline">Available for Home Tutoring • Professional • Reliable • Patient</p>
+      <p class="footer__copy">© <span id="year"></span> Khadija Jamal K. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/923363105232?text=Hi%20Khadija%2C%20I%20am%20interested%20in%20home%20tuition." target="_blank" rel="noopener" class="wa-fab" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c.6.3 1.1.4 1.5.6.6.2 1.2.2 1.7.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

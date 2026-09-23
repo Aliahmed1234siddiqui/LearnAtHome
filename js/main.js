@@ -1,5 +1,5 @@
 /* =====================================================
-   Khadija Jamal K. — Home Tutor  |  main.js
+   Khadija Siddiqui — Home & Online Tutor  |  main.js
    3D hero scene (Three.js), tilt cards, nav, reveal
    ===================================================== */
 (function () {

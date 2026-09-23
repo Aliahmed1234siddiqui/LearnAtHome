@@ -1,5 +1,5 @@
 /* =====================================================
-   Khadija Jamal K. — Home Tutor  |  style.css
+   Khadija Siddiqui — Home & Online Tutor  |  style.css
    ===================================================== */
 
 :root {
@@ -386,6 +386,12 @@ p { margin: 0; }
   .about__content { text-align: center; }
   .about__tags { justify-content: center; }
 }
+
+/* ---------- Services ---------- */
+.services { position: relative; background: linear-gradient(180deg, #fff 0%, var(--lavender) 100%); }
+.services__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; max-width: 900px; margin: 0 auto; perspective: 1400px; }
+.service-card .class-card__time strong { font-size: 15px; text-align: right; }
+@media (max-width: 720px) { .services__grid { grid-template-columns: 1fr; } }
 
 /* ---------- Classes ---------- */
 .classes { position: relative; }
